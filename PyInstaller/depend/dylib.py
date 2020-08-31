@@ -222,6 +222,8 @@ _unix_excludes = {
     # system running a Wayland compositor should already have these libraries
     # in versions that should not conflict with system drivers, unlike bundled
     r'libwayland.*\.so(\..*)?',
+    # CUDA user-mode driver (Driver API) is coupled with the kernel driver and shipped with it
+    r'libcuda\.so(\..*)?',
 }
 
 _aix_excludes = {

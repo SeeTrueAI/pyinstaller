@@ -215,6 +215,8 @@ _unix_excludes = {
     # the graphics stack anyway. No need to bundle it.
     r'libxcb\.so(\..*)?',
     r'libxcb-dri.*\.so(\..*)?',
+    # CUDA user-mode driver (Driver API) is coupled with the kernel driver and shipped with it
+    r'libcuda\.so(\..*)?',
 }
 
 _aix_excludes = {

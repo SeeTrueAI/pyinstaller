@@ -130,9 +130,13 @@ _unix_excludes = {
     # libxcb-dri changes ABI frequently (e.g.: between Ubuntu LTS releases) and is usually installed as dependency of
     # the graphics stack anyway. No need to bundle it.
     r'libxcb\.so(\..*)?',
-    r'libxcb-dri.*\.so(\..*)?',
+    r'libxcb-(dri|glx|shm).*\.so(\..*)?',
     # CUDA user-mode driver (Driver API) is coupled with the kernel driver and shipped with it
     r'libcuda\.so(\..*)?',
+    # hacking for 20.04 compatibility
+    r'libgtk-3\.so(\..*)?',
+    r'libstdc\+\+\.so(\..*)?',
+    r'libfontconfig\.so(\..*)?',
 }
 
 _aix_excludes = {

@@ -224,6 +224,8 @@ _unix_excludes = {
     r'libwayland.*\.so(\..*)?',
     # CUDA user-mode driver (Driver API) is coupled with the kernel driver and shipped with it
     r'libcuda\.so(\..*)?',
+    # CUDA libraries
+    r'libcu(solver|sparse|fft|blas|rand|inj64).*\.so(\..*)?',
 }
 
 _aix_excludes = {

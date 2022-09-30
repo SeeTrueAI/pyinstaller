@@ -219,6 +219,8 @@ _unix_excludes = {
     r'libcuda\.so(\..*)?',
     # CUDA libraries
     r'libcu(solver|sparse|fft|blas|rand|inj64).*\.so(\..*)?',
+    # other nvidia libs, runtime compiler and so on
+    r'libnv(rtc|rtc-builtins|jpeg|graph|blas|ToolsExt).*\.so(\..*)?',
 }
 
 _aix_excludes = {

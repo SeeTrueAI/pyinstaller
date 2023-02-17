@@ -258,15 +258,4 @@ setup(
         **wheel_commands,
         'bdist_wheels': bdist_wheels,
     },
-    packages=find_packages(include=["PyInstaller", "PyInstaller.*"]),
-    package_data={
-        "PyInstaller": [
-            # Include all bootloaders in wheels by default.
-            "bootloader/*/*",
-            # These files need to be explicitly included as well.
-            "fake-modules/*.py",
-            "hooks/rthooks.dat",
-            "lib/README.rst",
-        ],
-    },
 )

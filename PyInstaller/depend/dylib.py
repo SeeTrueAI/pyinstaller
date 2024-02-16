@@ -217,6 +217,8 @@ _unix_excludes = {
     r'libxcb-dri.*\.so(\..*)?',
     # CUDA user-mode driver (Driver API) is coupled with the kernel driver and shipped with it
     r'libcuda\.so(\..*)?',
+    # CUDA runtime
+    r'libcudart.*\.so(\..*)?',
     # CUDA libraries
     r'libcu(solver|sparse|fft|blas|rand|inj64).*\.so(\..*)?',
     # other nvidia libs, runtime compiler and so on
